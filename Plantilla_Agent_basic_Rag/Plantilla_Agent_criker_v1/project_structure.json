@@ -1,0 +1,114 @@
+{
+  "project": "Plantilla_Agent_criker_v1",
+  "files": [
+    ".env",
+    ".gitignore",
+    "config.py",
+    "dockerfile",
+    "README.md",
+    "requirements.txt",
+    "service.json",
+    "temp.pdf",
+    "Untitled-2025-08-04-1821.excalidraw"
+  ],
+  "directories": {
+    "__pycache__": [
+      "config.cpython-312.pyc",
+      "config.cpython-313.pyc",
+      "mongodb.cpython-313.pyc"
+    ],
+    ".vscode": [
+      "launch.json"
+    ],
+    "agent": {
+      "files": [
+        "__init__.py",
+        "main.py"
+      ],
+      "subdirectories": {
+        "__pycache__": [
+          "__init__.cpython-311.pyc",
+          "__init__.cpython-313.pyc",
+          "auth.cpython-313.pyc",
+          "database.cpython-313.pyc",
+          "main.cpython-311.pyc",
+          "main.cpython-313.pyc",
+          "retrieval.cpython-313.pyc"
+        ],
+        "memory": {
+          "files": [
+            "__init__.py",
+            "mongodb_memory.py"
+          ],
+          "subdirectories": {
+            "__pycache__": [
+              "__init__.cpython-311.pyc",
+              "__init__.cpython-312.pyc",
+              "__init__.cpython-313.pyc",
+              "mongodb_memory.cpython-311.pyc",
+              "mongodb_memory.cpython-312.pyc",
+              "mongodb_memory.cpython-313.pyc"
+            ]
+          }
+        },
+        "proces": {},
+        "prompt_templates": [
+          "escenarioGeneral2.py"
+        ],
+        "rag": {
+          "files": [
+            "__init__.py",
+            "atlas_retriever.py",
+            "create_embeddings.py"
+          ],
+          "subdirectories": {
+            "__pycache__": [
+              "__init__.cpython-311.pyc",
+              "__init__.cpython-313.pyc",
+              "atlas_retriever.cpython-311.pyc",
+              "atlas_retriever.cpython-313.pyc",
+              "local_retriever.cpython-311.pyc"
+            ],
+            "data": [
+              "mi_libro.pdf"
+            ]
+          }
+        },
+        "tools": {
+          "files": [
+            "__init__.py",
+            "tool1.py",
+            "tool2.py"
+          ]
+        }
+      }
+    },
+    "api": {
+      "files": [
+        "__init__.py",
+        "api.py"
+      ],
+      "subdirectories": {
+        "__pycache__": [
+          "__init__.cpython-313.pyc",
+          "api.cpython-313.pyc",
+          "payment.cpython-313.pyc"
+        ]
+      }
+    },
+    "services": {
+      "files": [
+        "gcs_service.py"
+      ],
+      "subdirectories": {
+        "__pycache__": [
+          "storage.cpython-313.pyc"
+        ]
+      }
+    },
+    "tests": [
+      "__init__.py",
+      "test_agent.py"
+    ]
+  }
+}

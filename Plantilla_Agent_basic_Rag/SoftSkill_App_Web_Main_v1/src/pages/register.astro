@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import SecondaryNav from "../components/SecondaryNav.astro";
+import "../styles/login-register.css";
+
+export interface Props {
+  currentPage?: string;
+}
+
+const { currentPage = "" } = Astro.props;
+---
+
+<Layout title="Comunicación - Knowledge">
+  <Navigation currentPage="comunicacion" />
+  <SecondaryNav currentSection="knowledge" />
+
+  <section
+    id="login"
+    class="container-logear section-full bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white pt-20"
+  >
+    <div
+      class="flex flex-col lg:flex-row items-center justify-center gap-10 w-full max-w-7xl mx-auto px-4"
+    >
+      <div class="w-full lg:w-1/2">
+        <div class="info-panel p-6 bg-white/10 rounded-lg text-white">
+          <h2 class="text-2xl font-bold mb-4">¿No puede iniciar sesión?</h2>
+          <ul class="list-disc pl-6 space-y-2 text-white/90">
+            <li>Contactanos a nuestro por estos medio.</li>
+            <li>Telefono: +51 ### ### ###.</li>
+            <li>WhatsApp: +51 ### ### ###.</li>
+            <li>Correo: conauti@outlook.com</li>
+          </ul>
+          <p class="mt-6 text-sm text-white/70">
+            ¿Aún no tienes cuenta? ¡Es rápido y fácil registrarse!
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/2 transform translate-x-80">
+        <div class="login-container">
+          <div class="login-card">
+            <div class="login-header">
+              <div class="logo-icon">LOGO</div>
+              <h2>Registrate</h2>
+              <p>Registrate con</p>
+            </div>
+
+            <form class="login-form" id="loginForm" novalidate></form>
+
+            <div class="social-login">
+              <button type="button" class="social-btn google-btn">
+                <span class="social-icon google-icon"></span>
+                <span>Iniciar con Google</span>
+              </button>
+              <button type="button" class="social-btn apple-btn">
+                <span class="social-icon Microsoft-icon"></span>
+                <span>Iniciar con Microsoft</span>
+              </button>
+            </div>
+
+            <div class="divider"><span>o</span></div>
+
+            <div class="form-group">
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                />
+                <label for="email">Correo</label>
+                <span class="input-line"></span>
+              </div>
+              <span class="error-message" id="emailError"></span>
+            </div>
+            <button id="continue-btn" type="submit" class="login-btn btn">
+              <span class="btn-text">Continuar</span>
+              <span class="btn-loader"></span>
+              <span class="btn-glow"></span>
+            </button>
+
+            <div class="signup-link">
+              <p>
+                ¿Ya tienes cuenta? <a
+                  href="/login"
+                  class={`nav-link ${currentPage === "login" ? "nav-link-active" : ""}`}
+                  >Inicia Sesión</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
