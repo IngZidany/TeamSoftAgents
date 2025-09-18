@@ -12,7 +12,6 @@ const Testimonials = () => {
       company: "TechCorp",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
       content: "Criker ha transformado completamente mi forma de abordar problemas complejos. En solo 3 semanas, mi equipo notó una mejora significativa en mi capacidad de análisis y toma de decisiones.",
-      rating: 5
     },
     {
       name: "Carlos Rodríguez",
@@ -20,7 +19,6 @@ const Testimonials = () => {
       company: "Universidad Nacional",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       content: "Como estudiante, siempre tuve dificultades con el pensamiento crítico. Criker me ayudó a desarrollar estas habilidades de manera estructurada y práctica. Ahora me siento más confiado en mis presentaciones y análisis.",
-      rating: 5
     },
     {
       name: "Ana Martínez",
@@ -28,7 +26,6 @@ const Testimonials = () => {
       company: "Consulting Plus",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
       content: "La personalización de Criker es increíble. Se adapta perfectamente a mi estilo de aprendizaje y me desafía justo en el nivel correcto. Mis clientes han notado una mejora notable en mis recomendaciones.",
-      rating: 5
     },
     {
       name: "David Chen",
@@ -36,7 +33,6 @@ const Testimonials = () => {
       company: "StartupXYZ",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       content: "Aunque soy técnico, siempre supe que necesitaba mejorar mis habilidades blandas. Criker me ayudó a comunicar mejor mis ideas y a trabajar más efectivamente en equipo.",
-      rating: 5
     },
     {
       name: "Laura Fernández",
@@ -44,7 +40,6 @@ const Testimonials = () => {
       company: "Global Corp",
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
       content: "Implementamos Criker en nuestro programa de desarrollo de liderazgo. Los resultados han sido excepcionales. Nuestros gerentes han mejorado significativamente su capacidad de pensamiento estratégico.",
-      rating: 5
     },
     {
       name: "Roberto Silva",
@@ -52,7 +47,6 @@ const Testimonials = () => {
       company: "InnovateLab",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
       content: "Como emprendedor, necesito tomar decisiones complejas constantemente. Criker me ha ayudado a desarrollar un marco de pensamiento más estructurado y efectivo para evaluar oportunidades.",
-      rating: 5
     }
   ]
 
@@ -117,12 +111,7 @@ const Testimonials = () => {
                           "{testimonial.content}"
                         </p>
 
-                        {/* Rating */}
-                        <div className="flex items-center space-x-1 mb-4">
-                          {[...Array(testimonial.rating)].map((_, i) => (
-                            <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                          ))}
-                        </div>
+                        
 
                         {/* Author */}
                         <div className="flex items-center space-x-4">

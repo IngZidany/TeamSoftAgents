@@ -97,7 +97,7 @@ const Pricing = () => {
   ]
 
   return (
-    <section id="acceso" className="py-20 bg-gradient-to-b from-primary-900 to-metallic-900 relative overflow-hidden">
+    <section id="acceso" className="py-5 bg-gradient-to-b from-primary-900 to-metallic-900 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-tech-pattern opacity-10"></div>
       <div className="absolute top-20 left-20 w-64 h-64 bg-primary-500/5 rounded-full blur-3xl"></div>
@@ -210,39 +210,6 @@ const Pricing = () => {
                 </ul>
               </motion.div>
             ))}
-          </div>
-        </motion.div>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="glass rounded-2xl p-8 border border-primary-500/20 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              ¿Listo para el Futuro de las Habilidades Blandas?
-            </h3>
-            <p className="text-metallic-300 mb-6 text-lg">
-              Únete a miles de profesionales que ya están preparándose para el futuro del trabajo
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://demo.softskill.ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 btn-hover text-lg"
-              >
-                <Zap className="mr-2 w-5 h-5" />
-                Probar Demo Gratis
-              </a>
-              <button className="inline-flex items-center px-8 py-4 border border-metallic-600 text-metallic-200 font-semibold rounded-lg hover:border-primary-500 hover:text-primary-400 transition-all duration-300 text-lg">
-                <Users className="mr-2 w-5 h-5" />
-                Unirse a la Lista de Espera
-              </button>
-            </div>
           </div>
         </motion.div>
       </div>
